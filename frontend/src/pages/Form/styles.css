@@ -1,0 +1,57 @@
+.vsmovie-form-container {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.vsmovie-form {
+    width: calc(100% - 20px);
+}
+
+.vsmovie-form-group {
+    margin-bottom: 20px;
+}
+
+.vsmovie-form-group label {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.vsmovie-form-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.vsmovie-movie-card-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.vsmovie-card-bottom-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.vsmovie-card-bottom-container h3 {
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+
+.vsmovie-btn {
+    background-color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
