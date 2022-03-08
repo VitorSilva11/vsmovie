@@ -1,0 +1,29 @@
+header{
+    background-color: var(--color-primary);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.vsmovie-nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.vsmovie-nav-content h1{
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.vsmovie-contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.vsmovie-contact-link{
+    margin: 0px 0px 0px 10px;
+    font-size: 12px;
+}
