@@ -1,9 +1,13 @@
 package br.com.study.vsmovie.entites;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -15,14 +19,16 @@ public class Movie {
 	@Id
 	//Para auto encrementar no banco de dados o id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
-	
 	// Atributos
 	private Long id;
 	private String title;
 	private Double score;
 	private Integer count;
 	private String image;
+	
+	
+	@OneToMany(mappedBy = "id.movie") //Um para muitos
+	private Set<Score> scores = new HashSet<>();
 
 	// Construtor
 	public Movie() {
@@ -77,5 +83,11 @@ public class Movie {
 	public void setImage(String image) {
 		this.image = image;
 	}
+
+	public Set<Score> getScores() {
+		return scores;
+	}
+	
+	
 
 }
